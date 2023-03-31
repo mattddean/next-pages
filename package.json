@@ -2,6 +2,10 @@
   "name": "next-pages",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=v16.0.0"
+  },
+  "packageManager": "pnpm@8.1.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -57,18 +61,17 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "^0.5.0",
     "@typescript-eslint/eslint-plugin": "^5.54.1",
     "@typescript-eslint/parser": "^5.54.1",
     "autoprefixer": "^10.4.14",
     "dotenv": "^16.0.3",
     "dotenv-cli": "^6.0.0",
-    "drizzle-kit": "0.17.0-0cf3fe9",
     "eslint": "8.25.0",
     "eslint-config-next": "12.3.1",
     "eslint-config-prettier": "^8.7.0",
     "eslint-plugin-only-warn": "^1.1.0",
     "next-auth": "^4.20.1",
+    "next-on-pages": "0.5.1",
     "postcss": "^8.4.21",
     "prettier": "^2.8.1",
     "prettier-plugin-tailwindcss": "^0.2.4",
@@ -77,11 +80,10 @@
   },
   "pnpm": {
     "patchedDependencies": {
-      "@tanstack/react-query@4.14.5": "patches/@tanstack__react-query@4.14.5.patch",
-      "@auth/core@0.5.1": "patches/@auth__core@0.5.1.patch"
+      "@tanstack/react-query@4.14.5": "patches/@tanstack__react-query@4.14.5.patch"
     },
     "overrides": {
-      "esbuild": "0.17.12"
+      "esbuild": "0.17.14"
     }
   }
 }
