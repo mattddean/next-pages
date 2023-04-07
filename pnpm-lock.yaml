@@ -181,9 +181,6 @@ importers:
       next-auth:
         specifier: ^4.20.1
         version: 4.20.1(next@13.2.4)(react-dom@18.2.0)(react@18.2.0)
-      next-on-pages:
-        specifier: 0.5.1
-        version: link:packages/next-on-pages
       postcss:
         specifier: ^8.4.21
         version: 8.4.21
