@@ -1,0 +1,34 @@
+diff --git a/dist/astring.js b/dist/astring.js
+index 04a243ece702d90f08e8ece08a87557fec4c7573..d85fb074190f5d59dd9bb54409c9074ad5405378 100644
+--- a/dist/astring.js
++++ b/dist/astring.js
+@@ -23,10 +23,9 @@ if (!String.prototype.endsWith) {
+ }
+ 
+ var OPERATOR_PRECEDENCE = {
+-  '||': 3,
+-  '&&': 4,
++  '||': 2,
++  '??': 3,
+   '|': 5,
+-  '??': 5,
+   '^': 6,
+   '&': 7,
+   '==': 8,
+diff --git a/dist/astring.mjs b/dist/astring.mjs
+index d19c34f0c56dec6dada276173ffce3641c73521c..38a0ac7d160c98aec486ae2d3b138293a1171fee 100644
+--- a/dist/astring.mjs
++++ b/dist/astring.mjs
+@@ -27,10 +27,10 @@ if (!String.prototype.endsWith) {
+ }
+ 
+ const OPERATOR_PRECEDENCE = {
+-  '||': 3,
++  '||': 2,
++  '??': 3,
+   '&&': 4,
+   '|': 5,
+-  '??': 5,
+   '^': 6,
+   '&': 7,
+   '==': 8,
